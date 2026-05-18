@@ -154,7 +154,7 @@ def create_process():
     if shutil.which("kwrite"):
         app = "kwrite"
 
-    elif shutil.which("gedit"):
+    elif shutil.which("gedit"): # This is going to be removed soon
         app = "gedit"
 
     elif shutil.which("xterm"):
