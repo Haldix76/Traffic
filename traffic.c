@@ -36,7 +36,6 @@ void newProcess(void)
 
 int main(int argc, char *argv[])
 {
-    // ./traffic signal 1234 15
     if (argc == 4 && strcmp(argv[1], "signal") == 0)
     {
         int pid = atoi(argv[2]);
@@ -45,7 +44,6 @@ int main(int argc, char *argv[])
         sendSignal(pid, sig);
     }
 
-    // ./traffic new
     else if (argc == 2 && strcmp(argv[1], "new") == 0)
     {
         newProcess();
